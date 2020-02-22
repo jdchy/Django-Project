@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %} News {% endblock %}
+
+{% block content %}
+
+<h1>This is News Page</h1>
+
+{% for rows in data %}
+
+<ul>
+	<li>Author Name : {{rows.author}}</li>
+	<li>Title : {{rows.title}}</li>
+</ul>
+<h2>----------Description-------</h2>
+<p>{{rows.description}}</p>
+{% endfor %}
+
+
+
+
+{% endblock %}
